@@ -56,5 +56,7 @@ $factory->define(App\Place::class, function(Faker\Generator $faker) {
         'phone' => $faker->phoneNumber,
         'lon' => $faker->longitude(21.023825, 21.026228),
         'lat' => $faker->latitude(105.829325, 105.829668),
+        'image_id' => 1,
+        'price_id' => 1,
     ];
 });

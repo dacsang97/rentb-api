@@ -9,7 +9,7 @@ use App\Place;
 class PlaceController extends Controller
 {
     public function index() {
-        return $this->collection(Place::paginate(5), new PlaceTransfomer());
+        return $this->collection(Place::all(), new PlaceTransfomer());
     }
 
     public function sqr($x) {
