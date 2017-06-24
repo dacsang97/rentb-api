@@ -22,3 +22,15 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+/*
+ * Factory Prices
+ */
+$factory->define(App\Price::class, function(Faker\Generator $faker) {
+    return [
+        'price_bike' => $faker->numberBetween(2000, 6000),
+        'price_bike_detail' => '5000đ / 1h',
+        'price_mbike' => $faker->numberBetween(50000, 100000),
+        'price_mbike_detail' => '100000đ / 1 ngày'
+    ];
+});

@@ -181,6 +181,11 @@ return [
          *  Passport provider
          */
         Laravel\Passport\PassportServiceProvider::class,
+
+        /*
+         *  Fractal provider
+         */
+        App\Providers\FractalServiceProvider::class,
     ],
 
     /*
