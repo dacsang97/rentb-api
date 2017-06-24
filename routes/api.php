@@ -20,3 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'images'], function() {
     Route::get('/', ['uses' => 'ImagesController@index']);
 });
+
+Route::group(['prefix' => 'places'], function() {
+    Route::get('/', ['uses' => 'PlaceController@index']);
+    Route::get('/near-by', ['uses' => 'PlaceController@nearBy']);
+});

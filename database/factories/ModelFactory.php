@@ -34,3 +34,27 @@ $factory->define(App\Price::class, function(Faker\Generator $faker) {
         'price_mbike_detail' => '100000đ / 1 ngày'
     ];
 });
+
+/*
+ * Factory Images
+ */
+$factory->define(App\Image::class, function(Faker\Generator $faker) {
+   return [
+       'original_name' => 'random.jpg',
+       'file_name' => 'random.jpg',
+       'slug_icon' => 'http://lorempixel.com/600/400/',
+       'slug_original' => 'http://lorempixel.com/600/400/',
+   ];
+});
+
+$factory->define(App\Place::class, function(Faker\Generator $faker) {
+    return [
+        'type' => $faker->numberBetween(0,2),
+        'name' => $faker->name,
+        'description' => $faker->sentence(10),
+        'address' => $faker->address,
+        'phone' => $faker->phoneNumber,
+        'lon' => $faker->longitude(21.023825, 21.026228),
+        'lat' => $faker->latitude(105.829325, 105.829668),
+    ];
+});
