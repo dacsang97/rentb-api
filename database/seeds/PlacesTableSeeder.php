@@ -381,6 +381,65 @@ class PlacesTableSeeder extends Seeder
             'lat' => 105.8134234,
             'price_id' => null,
         ]);
+
+        factory(App\Place::class)->create([
+            'type' => 1,
+            'name' => '596 Lạc Long Quân',
+            'address' => 'Nhật Tân, Tây Hồ, Hà Nội',
+            'lon' => 21.075961,
+            'lat' => 105.813408,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 1,
+            'name' => '10 Lạc Long Quân',
+            'address' => 'Nhật Tân, Tây Hồ, Hà Nội',
+            'lon' => 21.074647,
+            'lat' => 105.814603,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 1,
+            'name' => 'Trung Tâm Văn Hóa Quận Tây Hồ',
+            'address' => '691, Lạc Long Quân',
+            'lon' => 21.078538,
+            'lat' => 105.815383,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 1,
+            'name' => '71 ngõ 399 Âu Cơ',
+            'address' => 'Nhật Tân, Tây Hồ, Hà Nội, Việt Nam',
+            'lon' => 21.073650,
+            'lat' => 105.821975,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Trạm Xăng 612 Lạc Long Quân',
+            'address' => 'Nhật Tân, Tây Hồ, Hà Nội, Việt Nam',
+            'lon' => 21.075918,
+            'lat' => 105.813964,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Trạm Xăng 395 Lạc Long Quân',
+            'address' => 'Phú Thượng, Tây Hồ, Hà Nội',
+            'lon' => 21.079302,
+            'lat' => 105.816325,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Trạm Xăng 489 Âu Cơ',
+            'address' => 'Nhật Tân, Tây Hồ, Hà Nội, Việt Nam',
+            'lon' => 21.079743,
+            'lat' => 105.819275,
+            'price_id' => null,
+        ]);
 //        factory(App\Place::class, 10)->create()->each(function($u) {
 //            $u->price()->save(factory(App\Price::class)->make());
 //        });
