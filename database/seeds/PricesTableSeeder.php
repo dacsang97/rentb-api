@@ -13,10 +13,10 @@ class PricesTableSeeder extends Seeder
     public function run()
     {
         $price = new Price();
-        $price->price_bike = 5000;
-        $price->price_bike_detail = '5000đ / 1h';
-        $price->price_mbike = 100000;
-        $price->price_mbike_detail = '100000đ / 1 ngày';
+        $price->price_bike = '5000đ / 1h';
+        $price->price_bike_detail = '100000đ / ngày';
+        $price->price_mbike = '0đ / 1h';
+        $price->price_mbike_detail = '150000đ / 1 ngày';
         $price->save();
     }
 }
