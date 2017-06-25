@@ -285,6 +285,102 @@ class PlacesTableSeeder extends Seeder
             'lon' => 21.036916,
             'lat' => 105.877485
         ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây xăng La Thành',
+            'address' => 'Thành Công, Ba Đình, Hà Nội, Việt Nam',
+            'lon' => 21.0237466,
+            'lat' => 105.8131874,
+            'price_id' => null,
+        ]);
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Trạm Xăng Nguyễn Công Hoan',
+            'address' => 'Ngõ 84, Giảng Võ, Ba Đình, Hà Nội, Việt Nam',
+            'lon' => 21.0253089,
+            'lat' => 105.8147001,
+            'price_id' => null,
+        ]);
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Nguyễn Chí Thanh/La Thành',
+            'address' => 'Nguyễn Chí Thanh, Láng Hạ, Đống Đa, Hà Nội, Việt Nam',
+            'lon' => 21.0243083,
+            'lat' => 105.8086098,
+            'price_id' => null,
+        ]);
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Đối diện 4 Triệu Quốc Đạt',
+            'address' => '4 Triệu Quốc Đạt Trần Hưng Đạo, Hoàn Kiếm Hà Nội, Việt Nam',
+            'lon' => 21.0263063,
+            'lat' => 105.8470848,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây Xăng Quân Đội',
+            'address' => '107 Phan Văn Trường, Dịch Vọng Hậu, Cầu Giấy, Hà Nội, Việt Nam',
+            'lon' => 21.0239812,
+            'lat' => 105.7800935,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cửa hàng xăng dầu số 3',
+            'address' => '1174 Đường Láng, Láng Thượng, Đống Đa, Hà Nội, Việt Nam',
+            'lon' => 21.029429,
+            'lat' => 105.7903932,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây xăng Nam Đồng',
+            'address' => 'Ngõ 141 Hồ Đắc Di, Quang Trung, Đống Đa, Hà Nội, Việt Nam',
+            'lon' => 21.029429,
+            'lat' => 105.7903932,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây Xăng Trần Hưng Đạo',
+            'address' => '6 Trần Hưng Đạo, Phan Chu Trinh, Hoàn Kiếm, Hà Nội, Việt Nam',
+            'lon' => 21.0295893,
+            'lat' => 105.8037828,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây Xăng 199 Minh Khai',
+            'address' => '199 Minh Khai, Hai Bà Trưng, Hà Nội, Việt Nam',
+            'lon' => 20.995897,
+            'lat' => 105.858758,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Cây Xăng Láng Hạ',
+            'address' => 'Thành Công, Ba Đình, Hà Nội, Việt Nam',
+            'lon' => 21.0232659,
+            'lat' => 105.8176398,
+            'price_id' => null,
+        ]);
+
+        factory(App\Place::class)->create([
+            'type' => 2,
+            'name' => 'Trạm Xăng Dầu Thái Thịnh',
+            'address' => '194 Thái Thịnh, Láng Hạ, Đống Đa, Hà Nội, Việt Nam',
+            'lon' => 21.012019,
+            'lat' => 105.8134234,
+            'price_id' => null,
+        ]);
 //        factory(App\Place::class, 10)->create()->each(function($u) {
 //            $u->price()->save(factory(App\Price::class)->make());
 //        });
